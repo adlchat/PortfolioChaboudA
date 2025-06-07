@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos secteurs d'activité</title>
+    <link rel="stylesheet" href="css/secteurs.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript/secteurs.js"></script> 
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <a href="homepage.html"><img src="img/logo.svg" alt="Orange logo"></a>
+        <a href="#" class="open-btn icon icon-menu" id="menubar"></a>
+        <nav class="topnav" id="laNav">
+            <a href="#" class="close-btn" id="close-btn" hidden="true">X</a>
+            <ul >
+                <li><a href="quiSommesNous.html">Notre entreprise</a></li>
+                
+                <div class="dropdown">
+                <li><a href="secteurs.html">Nos secteurs</a></li>
+                    
+                    <div class="dropdown-content">
+                      <a href="#" onclick="activateTab(event, 'internetres')">Internet et Réseaux </a>
+                      <a href="#" onclick="activateTab(event, 'telmobilite')">Téléphonie et Mobilité </a>
+                      <a href="#" onclick="activateTab(event, 'securite')">Sécurité</a>
+                      <a href="#" onclick="activateTab(event, 'cloud')">Cloud </a>
+                    </div>
+                  </div>
+                <li><a href="quiSommesNous.html#valeurs">Pourquoi nous ?</a></li>
+                <li><a href="formulaire.html"><button id="contact" class="btn">Contactez-nous</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="javascript/script.js"></script>
+    <main>
+        <img src="img/sect-secteurs.png" alt="image titre" class="title">
+        <div>
+            <h1>Nos secteurs d'activité</h1>
+        </div>
+        
+        <nav class="navsect">
+            <button class="tab" onclick="activateTab(event, 'internetres')" id="defaut">Internet et Réseaux</button>
+            <button class="tab" onclick="activateTab(event, 'telmobilite')">Téléphonie et Mobilité</button>
+            <button class="tab" onclick="activateTab(event, 'securite')">Sécurité</button>                    
+            <button class="tab" onclick="activateTab(event, 'cloud')">Cloud</button>
+        </nav>
+
+        <section id="internetres" class="contenu">
+            <div class="nomSect">
+                <i class="fa fa-rss fa-4x" aria-hidden="true"></i>
+                <h2>Internet et Réseaux</h2> 
+            </div>
+            <article>  
+                <p> 
+                     Un réseau rapide et fiable est essentiel pour évoluer dans le monde numérique d’aujourd’hui. Que ce soit pour communiquer, envoyer des fichiers ou accéder à des services en ligne, une connexion de qualité est indispensable. 
+                    <br><br>
+                    Nos services offrent une connexion internet rapide, sécurisée et disponible partout dans le monde, afin de soutenir les entreprises de toutes tailles dans leurs opérations quotidiennes. 
+                </p>
+                <img src="img/sect-internet_reseaux.jpg" alt="réseaux mondiaux">
+            </article>
+            <article>
+                <h2>Nos services Internet et Réseaux</h2>
+                <ul class="solutions">
+                    <li>
+                        <span><b>Réseau amélioré</b></span>
+                        <p>
+                            Création et gestion simples d'une plateforme réunissant tout ce dont l'entreprise a besoin pour se connecter à Internet, rester protégée contre les cyberattaques et utiliser le cloud. Tableau de bord en ligne permettant de contrôler tout le réseau de l'entreprise, facilement et sans risque.
+                        </p>
+                    </li>
+                    <li>
+                        <span><b>Réseau privé virtuel - VPN</b></span>
+                        <p>Nos solutions Business VPN offrent une connexion totalement sécurisée et confidentielle, accélérée par la technologie Ethernet. <br>Elles permettent d’accéder aux données de l’entreprise en toute simplicité et de n'importe où.</p>
+                    </li>
+                    <li>
+                        <span><b>Réseau local - LAN</b></span>
+                        <p>
+                            Une solution totalement personnalisée et économique pour développer le réseau informatique interne de l’entreprise, avec un accompagnement dédié pour étendre l’infrastructure réseau selon les besoins.
+                        </p>
+                    </li>
+                    <li>
+                        <span><b>Internet</b></span>
+                        <p>
+                            Nous proposons une connexion Internet à débit ajustable ainsi que des formations pour sensibiliser aux risques du numérique.
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <img src="img/handshake.jpg" alt="poignée de main" class="handshake">
+                <div>
+                    <h2>Intéressé.e par les métiers de l'Internet et des réseaux ?</h2>
+                    <p>Orange Business propose des stages partout en France ! Une occasion d'apprendre avec des professionnels, de participer à des projets concrets et de découvrir l'univers de la technologie. Développez vos compétences et connaissances dans un environnement où chaque opinion est écoutée et respectée.</p>
+                    <a href="formulaire.html" class="btn">Rejoignez nous</a>
+                </div>  
+            </article>
+        </section>
+
+        <section id="telmobilite" class="contenu">
+            <div class="nomSect">
+                <i class="fa fa-mobile fa-4x" aria-hidden="true"></i>
+                <h2>Téléphonie et Mobilité</h2> 
+            </div>
+            <article>  
+                <p>La téléphonie est essentielle pour la communication avec les clients et entre les collaborateurs.
+                    Avec les nouveaux modes de travail, il est plus important que jamais que les employés aient des téléphones professionnels et des forfaits mobiles fiables, sécurisés et dotés de nombreuses applications. <br><br>Nous proposons des solutions innovantes adaptées à toutes les entreprises, fonctionnant en France et à l’international, en 4G et 5G.</p>
+                <img src="img/sect-telmobil.jpg" alt="flotte téléphonique">
+            </article>
+            <article>
+                <h2>Nos services Téléphonie et Mobilité</h2>
+                <ul class="solutions">
+                    <li>
+                        <span><b>Téléphonie améliorée avec Internet</b></span>
+                        <p>Nos technologies de Voix sur IP utilisent notre connexion Internet haut débit pour améliorer la qualité des appels, simplifier l’ajout de lignes et offrir de nombreuses fonctionnalités pratiques.</p>
+                    </li>
+                    <li>
+                        <span><b>Gestion d'équipements et forfaits</b></span>
+                        <p>
+                            Une offre qui combine équipements, connexion et services pour réduire l’empreinte carbone des téléphones mobiles de l'entreprise. En cas de problème, un remplacement est assuré en moins de 24 heures. Les téléphones mobiles et autres équipements peuvent être gérés et adaptés facilement, individuellement ou pour un groupe.
+                        </p>
+                    </li>
+                    <li>
+                        <span><b>Applications mobiles</b></span>
+                        <p>Nous développons des applications innovantes pour mieux gérer la relation client, améliorer l'efficacité des collaborateurs et mettre en place des solutions d'identification en sans contact pour les employés. </p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <img src="img/handshake.jpg" alt="poignée de main" class="handshake">
+                <div>
+                    <h2>Intéressé.e par les métiers de la téléphonie ?</h2>
+                    <p>Orange Business propose des stages partout en France ! Une occasion d'apprendre avec des professionnels, de participer à des projets concrets et de découvrir l'univers de la technologie. Développez vos compétences et connaissances dans un environnement où chaque opinion est écoutée et respectée.</p>
+                    <a href="formulaire.html" class="btn">Rejoignez nous</a>
+                </div> 
+            </article>
+        </section>
+
+        <section id="securite" class="contenu">
+            <div class="nomSect">
+                <i class="fa fa-shield fa-4x" aria-hidden="true"></i>
+                <h2>Sécurité</h2> 
+            </div>
+            <article>  
+                <p>Orange Business protège les données d'entreprises et leurs réseaux informatiques à l'échelle internationale. <br><br>Leader européen des services de cybersécurité, Orange propose un accompagnement à chaque étape pour anticiper, détecter et neutraliser les attaques informatiques. </p>
+                <img src="img/sect-securite.jpg" alt="experts en cybersécurité">
+            </article>
+            <article>
+                <h2>Nos services Sécurité</h2>
+                <ul class="solutions">
+                    <li>
+                        <span><b>Anticiper et identifier </b></span>
+                        <p>
+                           Nos experts accompagnent les entreprises pour détecter et éliminer les failles dans leur système. Nous offrons un diagnostic complet de la sécurité des infrastructures informatiques ainsi que des formations à la cybersécurité.
+                        </p>
+                    </li>
+                    <li>
+                        <span><b>Détecter et protéger</b></span>
+                        <p>Nos technologies offrent une protection complète, adaptable aux nouvelles cybermenaces, avec des solutions de surveillance, d'authentification et de neutralisation des attaques très flexibles. En cas d'attaque, nous garantissons une intervention rapide et efficace.</p>
+                    </li>
+                    <li>
+                        <span><b>Lutter contre la fraude</b></span>
+                        <p>Nous proposons des plateformes de vérification des données clients grâce aux données des opérateurs mobiles, afin de réaliser un meilleur contrôle des identités et réduire le risque de fraude.</p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <img src="img/handshake.jpg" alt="poignée de main" class="handshake">
+                <div>
+                    <h2>Intéressé.e par les métiers de la cybersécurité ?</h2>
+                    <p>Orange Business propose des stages partout en France ! Une occasion d'apprendre avec des professionnels, de participer à des projets concrets et de découvrir l'univers de la technologie. Développez vos compétences et connaissances dans un environnement où chaque opinion est écoutée et respectée.</p>
+                    <a href="formulaire.html" class="btn">Rejoignez nous</a>
+                </div> 
+            </article>
+        </section>
+
+        <section id="cloud" class="contenu">
+            <div class="nomSect">
+                <i class="fa fa-cloud-upload fa-4x" aria-hidden="true"></i>
+                <h2>Cloud</h2> 
+            </div>
+            <article>  
+                <p>Le Cloud est un élément clé de la transformation numérique des entreprises. Orange Business propose des solutions de stockage en ligne variées, privées ou publiques, adaptées à chaque besoin. <br><br>Nos experts accompagnent les entreprises de toutes tailles pour protéger leurs données sensibles, améliorer l'accès aux informations et faciliter la collaboration à distance, en répondant à leurs exigences. </p>                
+                <img src="img/sect-cloud.jpg" alt="stockage cloud">
+            </article>
+            <article>
+                <h2>Nos services Cloud</h2>
+                <ul class="solutions">
+                    <li>
+                        <span><b>Infrastructures</b></span>
+                        <p>
+                            Nous proposons des offres variées pour un cloud public, privé ou hybride. Nos solutions de stockage permettent de rendre un système informatique plus rapide et plus flexible.
+                        </p>
+                    </li>
+                    <li>
+                        <span><b>Gestion</b></span>
+                        <p>
+                            Orange Business est au service des entreprises pour gérer, superviser et sécuriser la connexion de leur système au cloud, afin de libérer leurs équipes.  
+                        </p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <img src="img/handshake.jpg" alt="poignée de main" class="handshake">
+                <div>
+                    <h2>Intéressé.e par les métiers du cloud ?</h2>
+                    <p>Orange Business propose des stages partout en France ! Une occasion d'apprendre avec des professionnels, de participer à des projets concrets et de découvrir l'univers de la technologie. Développez vos compétences et connaissances dans un environnement où chaque opinion est écoutée et respectée.</p>
+                    <a href="formulaire.html" class="btn">Rejoignez nous</a>
+                </div>  
+            </article>
+        </section>
+        <script>
+            document.getElementById("defaut").click();
+        </script>
+    </main>
+
+    <footer>
+        <!-- Footer -->
+        <div class="footer">
+            <!-- Bloc de gauche -->
+            <div class="footer-left">
+                <!-- Logo -->
+                <div class="footer-logo">
+                    <img src="img/logo.svg" alt="Logo Orange">
+                </div>
+
+                <h3>Nos Agences</h3>
+
+
+                <!-- Liste des agences -->
+                <div class="footer-agencies">
+                    <ul>
+                        <li onclick="focusOnAgency(0)">Paris</li>
+                        <li onclick="focusOnAgency(1)">Saint Denis</li>
+                        <li onclick="focusOnAgency(2)">Lyon</li>
+                        <li onclick="focusOnAgency(3)">Marseille</li>
+                        <li onclick="focusOnAgency(4)">Lille</li>
+                    </ul>
+                    <ul>
+                        <li onclick="focusOnAgency(5)">Bordeaux</li>
+                        <li onclick="focusOnAgency(6)">Rennes</li>
+                        <li onclick="focusOnAgency(7)">Schiltigheim</li>
+                        <li onclick="focusOnAgency(8)">Toulouse</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Carte interactive -->
+            <div id="map" class="footer-map"></div>
+        </div>
+    </footer>
+    <!-- Script pour initialiser la carte -->
+    <script>
+        // Initialiser la carte Leaflet
+        var map = L.map('map').setView([48.8566, 2.3522], 10); // Centre sur Paris
+
+        // Ajouter les tuiles OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Coordonnées des agences
+        var agences = [
+            { name: "Paris <br><br>112/114 avenue Charles de Gaulle <br>92200 Neuilly sur Seine", coords: [48.875391, 2.288311] },
+            { name: "Saint Denis<br><br>1 place des Droits de L'Homme<br>93457 Saint-Denis", coords: [48.911816, 2.3624231] },
+            { name: "Lyon<br><br>141 Cours Gambetta <br>69424 Lyon", coords: [45.739926, 4.8591105] },
+            { name: "Marseille<br><br>2 place de la Joliette <br>13002 Marseille", coords: [43.298267, 5.381219] },
+            { name: "Lille<br><br>121 boulevard de Valmy<br>59650 Villeneuve d'Ascq", coords: [50.62595, 3.171165] },
+            { name: "Bordeaux<br><br>Cours Jules Ladoumègue<br>33300 Bordeaux", coords: [44.87078, -0.547364] },
+            { name: "Rennes<br><br>4 rue du Clos Courtel<br>35510 Cesson-Sévigné", coords: [48.119472, -1.602923] },
+            { name: "Schiltigheim<br><br>1 avenue de l’Europe Crystal Parc Bâtiment A<br>67300 Schiltigheim", coords: [48.601593, 7.770488] },
+            { name: "Toulouse<br><br>30 avenue Marcel Dassault La Plaine<br>31500 Toulouse", coords: [43.596561, 1.491287] }
+
+        ];
+
+        // Créer un tableau pour stocker les marqueurs
+        var markers = [];
+
+        // Ajouter les marqueurs des agences à la carte
+        agences.forEach(function (agence, index) {
+            var marker = L.marker(agence.coords)
+                .addTo(map)
+                .bindPopup(`<b>${agence.name}</b>`);
+            markers.push(marker); // Stocker chaque marqueur
+        });
+
+        // Fonction pour centrer la carte sur une agence lorsque l'on clique sur son nom
+        function focusOnAgency(index) {
+            var agence = agences[index];
+            var marker = markers[index];
+
+            // Centrer la carte sur le marqueur
+            map.setView(agence.coords, 14);
+
+            // Ouvrir le popup du marqueur
+            marker.openPopup();
+        }
+    </script>
+    
+</body>
+</html>

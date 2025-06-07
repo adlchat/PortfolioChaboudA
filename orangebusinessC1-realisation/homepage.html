@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Orange Business</title>
+    <link rel="stylesheet" href="css/homepage-styles.css">
+    <link rel="stylesheet" href="css/homepage-responsive.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body> <!--debut_nav_barre_à_copier_sur _les_autres_pages-->
+    <header>
+        <a href="homepage.html"><img src="img/logo.svg" alt="Orange logo"></a>
+        <a href="#" class="open-btn icon icon-menu" id="menubar"></a>
+        <nav class="topnav" id="laNav">
+            <a href="#" class="close-btn" id="close-btn" hidden="true">X</a>
+            <ul>
+                <li><a href="quiSommesNous.html">Notre entreprise</a></li>
+
+                <div class="dropdown">
+                    <li><a href="secteurs.html">Nos secteurs</a></li>
+
+                    <div class="dropdown-content">
+                        <a href="secteurs.html#internetres">Internet et Réseaux </a>
+                        <a href="secteurs.html#telmobilite">Téléphonie et Mobilité </a>
+                        <a href="secteurs.html#securite">Sécurité</a>
+                        <a href="secteurs.html#cloud">Cloud </a>
+                    </div>
+                </div>
+                <li><a href="quiSommesNous.html#valeurs">Pourquoi nous ?</a></li>
+                <li><a href="formulaire.html"><button id="contact-us" class="btn">Contactez-nous</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <script src="javascript/script.js"></script>
+    <!--fin_nav_barre_à_copier_sur _les_autres_pages-->
+    <main>
+        <img src="img/backgroud1.jpg" alt="background image" class="relative">
+        <section>
+            <article class='absolute'>
+
+                <h1>Orange Business - des innovations dans la transition écologique et numérique</h1>
+                <p>Orange Business agit pour rendre le numérique plus respectueux de l’environnement.
+                    Nos projets visent à accompagner les entreprises dans leur transition numérique tout en réduisant
+                    leur impact écologique.
+                    Rejoignez-nous et découvrez nos métiers, notre organisation et nos solutions au service d’un avenir
+                    durable.</p>
+                <a href="formulaire.html"><button type="contact" class="btn">Contactez-nous</button></a>
+
+            </article>
+        </section>
+
+        <section>
+            <span><img src="img/company1.jpg" alt="NotreEntreprise"></span>
+            <div>
+                <h2>Notre entreprise</h2>
+                <p>Orange Business est une entreprise leader dans la transformation numérique, offrant des solutions
+                    innovantes pour les entreprises. Engagés pour un avenir durable, nous allions performance et
+                    responsabilité.
+                    <br><br>Découvrez notre organisation et nos valeurs.
+                </p>
+                <a href="quiSommesNous.html"><button id="savoirplus" class="btn">En savoir plus</button></a>
+            </div>
+
+        </section>
+
+        <section>
+
+            <h2>Nos secteurs d’activité </h2>
+            <span>
+                <p>Orange Business aide les entreprises à évoluer avec le numérique grâce à des solutions innovantes et
+                    sur mesure. Qu'il s'agisse de cloud, de cybersécurité, d'applications mobiles ou de réseaux, nous
+                    les accompagnons pour connecter, sécuriser et améliorer leurs opérations.</p>
+            </span>
+
+            <article>
+                <div>
+                    <img src="img/Internet-et-Réseaux1.jpg" alt="">
+                    <span><a href="secteurs.html#internetres">Internet et Réseaux </a> </span>
+                    <p>Accès internet rapide et sécurisé, gestion des réseaux d'entreprises. </p>
+                </div>
+
+                <div>
+                    <img src="img/Téléphonie-et-Mobilité.jpg" alt="">
+                    <span><a href="secteurs.html#telmobilite">Téléphonie et Mobilité </a> </span>
+                    <p>Forfaits mobiles pour les entreprises, gestion des smartphones de l’entreprise. </p>
+                </div>
+
+                <div>
+                    <img src="img/Sécurité.jpg" alt="">
+                    <span><a href="secteurs.html#securite">Sécurité</a></span>
+                    <p> Protection des systèmes informatiques contre les cyberattaques.</p>
+                </div>
+
+                <div>
+                    <img src="img/Cloud.jpg" alt="">
+                    <span> <a href="secteurs.html#cloud">Cloud </a></span>
+                    <p>Cloud pour le télétravail et la collaboration. </p>
+                </div>
+            </article>
+
+
+        </section>
+
+        <section>
+
+            <article>
+                <div>
+                    <h3>Contactez-nous</h3>
+                    <p>Vous avez des idées ou vous voulez devenir notre partenaire?</p>
+                </div>
+                <a href="formulaire.html"><button id="contact" class="btn">Contactez-nous</button></a>
+            </article>
+            <img src="img/arrow-02.png" alt="fleche">
+
+        </section>
+
+        <footer>
+            <!-- Footer -->
+            <div class="footer">
+                <!-- Bloc de gauche -->
+                <div class="footer-left">
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="img/logo.svg" alt="Logo Orange">
+                    </div>
+
+                    <h3>Nos Agences</h3>
+
+
+                    <!-- Liste des agences -->
+                    <div class="footer-agencies">
+                        <ul>
+                            <li onclick="focusOnAgency(0)">Paris</li>
+                            <li onclick="focusOnAgency(1)">Saint Denis</li>
+                            <li onclick="focusOnAgency(2)">Lyon</li>
+                            <li onclick="focusOnAgency(3)">Marseille</li>
+                            <li onclick="focusOnAgency(4)">Lille</li>
+                        </ul>
+                        <ul>
+                            <li onclick="focusOnAgency(5)">Bordeaux</li>
+                            <li onclick="focusOnAgency(6)">Rennes</li>
+                            <li onclick="focusOnAgency(7)">Schiltigheim</li>
+                            <li onclick="focusOnAgency(8)">Toulouse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Carte interactive -->
+                <div id="map" class="footer-map"></div>
+            </div>
+        </footer>
+        <!-- Script pour initialiser la carte -->
+        <script>
+            // Initialiser la carte Leaflet
+            var map = L.map('map').setView([48.8566, 2.3522], 10); // Centre sur Paris
+
+            // Ajouter les tuiles OpenStreetMap
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Coordonnées des agences
+            var agences = [
+                { name: "Paris <br><br>112/114 avenue Charles de Gaulle <br>92200 Neuilly sur Seine", coords: [48.875391, 2.288311] },
+                { name: "Saint Denis<br><br>1 place des Droits de L'Homme<br>93457 Saint-Denis", coords: [48.911816, 2.3624231] },
+                { name: "Lyon<br><br>141 Cours Gambetta <br>69424 Lyon", coords: [45.739926, 4.8591105] },
+                { name: "Marseille<br><br>2 place de la Joliette <br>13002 Marseille", coords: [43.298267, 5.381219] },
+                { name: "Lille<br><br>121 boulevard de Valmy<br>59650 Villeneuve d'Ascq", coords: [50.62595, 3.171165] },
+                { name: "Bordeaux<br><br>Cours Jules Ladoumègue<br>33300 Bordeaux", coords: [44.87078, -0.547364] },
+                { name: "Rennes<br><br>4 rue du Clos Courtel<br>35510 Cesson-Sévigné", coords: [48.119472, -1.602923] },
+                { name: "Schiltigheim<br><br>1 avenue de l’Europe Crystal Parc Bâtiment A<br>67300 Schiltigheim", coords: [48.601593, 7.770488] },
+                { name: "Toulouse<br><br>30 avenue Marcel Dassault La Plaine<br>31500 Toulouse", coords: [43.596561, 1.491287] }
+
+            ];
+
+            // Créer un tableau pour stocker les marqueurs
+            var markers = [];
+
+            // Ajouter les marqueurs des agences à la carte
+            agences.forEach(function (agence, index) {
+                var marker = L.marker(agence.coords)
+                    .addTo(map)
+                    .bindPopup(`<b>${agence.name}</b>`);
+                markers.push(marker); // Stocker chaque marqueur
+            });
+
+            // Fonction pour centrer la carte sur une agence lorsque l'on clique sur son nom
+            function focusOnAgency(index) {
+                var agence = agences[index];
+                var marker = markers[index];
+
+                // Centrer la carte sur le marqueur
+                map.setView(agence.coords, 14);
+
+                // Ouvrir le popup du marqueur
+                marker.openPopup();
+            }
+        </script>
+    </main>
+</body>
+
+</html>

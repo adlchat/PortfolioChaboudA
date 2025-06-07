@@ -1,0 +1,103 @@
+
+section.spair{
+    display: flex;
+    flex-direction: row;
+}
+
+section.simpair{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+img.title{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+h1{
+    position: absolute;
+    color: #ff7900;
+    font-size: 200%;
+    background-color: #000000;
+    top: 29%;
+    left: 5%;
+    padding: 40px;
+
+    display: block;
+
+    }
+
+img.org, img.val{
+    width: 500px;
+    height: 500px;
+}
+
+img.val{
+    margin-bottom: 100px;
+}
+
+h2{
+    color: #ff7900;
+    font-size: 50px;
+
+}
+
+h2.hpair{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-family: arial, sans-serif;
+}
+
+.spair div, .simpair div{
+    margin-right: 60px;
+    margin-left: 60px;
+    width: 100%;
+}
+
+img.titre{
+    width: 1010px;
+    height: auto;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1300px) {
+    .simpair, .spair {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .himpair {
+            text-align: center;
+        }
+    .hpair {
+            justify-content: center;
+        }    
+    .simpair div{
+        margin-top: 50px;
+    }
+    .spair div{
+        margin-bottom: 50px;
+    }
+
+}
+@media only screen and (max-width: 710px) {
+    h2 {
+        font-size: 35px;
+    }
+    .simpair div{
+        margin-top: 0px;
+    }
+}

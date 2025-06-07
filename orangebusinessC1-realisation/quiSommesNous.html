@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/QuiSommesNous.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css">
+    <title>Qui sommes-nous</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+ <!--debut_nav_barre_à_copier_sur _les_autres_pages-->
+<header>
+    <a href="homepage.html"><img src="img/logo.svg" alt="Orange logo"></a>
+    <a href="#" class="open-btn icon icon-menu" id="menubar"></a>
+    <nav class="topnav" id="laNav">
+        <a href="#" class="close-btn" id="close-btn" hidden="true">X</a>
+        <ul >
+            <li><a href="quiSommesNous.html">Notre entreprise</a></li>
+            
+            <div class="dropdown">
+            <li><a href="secteurs.html">Nos secteurs</a></li>
+                
+                <div class="dropdown-content">
+                  <a href="secteurs.html#internetres">Internet et Réseaux </a>
+                  <a href="secteurs.html#telmobilite">Téléphonie et Mobilité </a>
+                  <a href="secteurs.html#securite">Sécurité</a>
+                  <a href="secteurs.html#cloud">Cloud </a>
+                </div>
+              </div>
+            <li><a href="quiSommesNous.html#valeurs">Pourquoi nous ?</a></li>
+            <li><a href="formulaire.html"><button id="contact" class="btn">Contactez-nous</button></a></li>
+        </ul>
+    </nav>
+</header>
+<script src="javascript/script.js"></script>
+<!--fin_nav_barre_à_copier_sur _les_autres_pages-->
+
+    <img src="img/qui_nous_sommes.jpg" alt="image titre" class="title">
+    <article>
+        <h1>Qui sommes-nous ?</h1>
+    </article>
+
+
+    <main>
+        <h2 class="himpair">Notre organisation</h2>
+
+        <section class="simpair">
+            <div>
+                <p>Orange Business est une société anonyme (SA). Nous nous organisons sur 3 niveaux hiérarchiques, principalement en fonction des régions du monde où nous sommes présents et de nos pôles majeurs. Orange Business agit au niveau mondial afin de garantir le déploiement de solutions digitales et la supervision des réseaux de nos clients au quotidien. <br><br>
+                <b>Aujourd'hui, Orange Business, c'est:</b>
+                </p> 
+                <ul>
+                    <li>Le <b>1er</b> réseau de téléphonie et données du monde<br><br></li>
+                    <li>Une présence dans <b>65</b> pays et une couverture dans plus de <b>200</b> pays et territoires<br><br></li>
+                    <li>Plus de <b>50</b> partenariats avec les meilleurs acteurs du marché<br><br></li>
+                    <li>Une note de <b>4/5</b> attribuée par nos employés pour leur expérience en tant que collaborateurs chez Orange Business (Glassdoor)</li>
+                </ul>
+            </div>
+            
+            <img class="org" src="img/organisation.jpg" alt="entreprise" >
+        </section>
+        <span id="valeurs"><br><br></span>
+        <h2 class="hpair" >Nos valeurs</h2>
+        <section class="spair">
+            <div>
+                <p>Chez Orange Business, nous avons inscrit plusieurs engagements au cœur de nos priorités dans le cadre de notre démarche de Responsabilité Sociétale des Entreprises, qui consiste à agir de manière responsable envers l’environnement, la société et nos collaborateurs:</p>
+                    <ul>
+                        <li>Respect de l’environnement : Nous cherchons à réduire notre impact écologique ainsi que celui de nos clients, grâce au numérique. C'est pour cela que nous nous engageons à ce que 50% de l'électricité que nous achetons soit certifiée d'origine renouvelable d'ici 2025. Notre entreprise s'engage également à collecter 30% de téléphones mobiles usagés par an d'ici 2025. <br><br></li>
+                        <li>Numérique responsable : Nous offrons des services éthiques et sécurisés, accessibles à tous. Pour ce faire, nous employons 6 600 salariés formés à la protection des données. <br><br></li>
+                        <li>Inclusion : Nous favorisons la diversité au sein de notre entreprise et agissons pour garantir l’égalité des chances : 33% de nos effectifs totaux sont des femmes ainsi que 43% de l'équipe dirigeante. Nous possédons également un score Diversité & Inclusion de 87/100 (évalué par Mixity).</li>
+                    </ul>
+            </div>
+                
+            
+            <img class = "val" src="img/nos_valeurs.jpg" alt="valeurs">
+        </section>
+
+    </main>
+
+</body>
+
+
+
+<footer>
+    <!-- Footer -->
+    <div class="footer">
+        <!-- Bloc de gauche -->
+        <div class="footer-left">
+            <!-- Logo -->
+            <div class="footer-logo">
+                <img src="img/logo.svg" alt="Logo Orange">
+            </div>
+
+            <h3>Nos Agences</h3>
+
+
+            <!-- Liste des agences -->
+            <div class="footer-agencies">
+                <ul>
+                    <li onclick="focusOnAgency(0)">Paris</li>
+                    <li onclick="focusOnAgency(1)">Saint Denis</li>
+                    <li onclick="focusOnAgency(2)">Lyon</li>
+                    <li onclick="focusOnAgency(3)">Marseille</li>
+                    <li onclick="focusOnAgency(4)">Lille</li>
+                </ul>
+                <ul>
+                    <li onclick="focusOnAgency(5)">Bordeaux</li>
+                    <li onclick="focusOnAgency(6)">Rennes</li>
+                    <li onclick="focusOnAgency(7)">Schiltigheim</li>
+                    <li onclick="focusOnAgency(8)">Toulouse</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Carte interactive -->
+        <div id="map" class="footer-map"></div>
+    </div>
+</footer>
+<!-- Script pour initialiser la carte -->
+<script>
+    // Initialiser la carte Leaflet
+    var map = L.map('map').setView([48.8566, 2.3522], 10); // Centre sur Paris
+
+    // Ajouter les tuiles OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Coordonnées des agences
+    var agences = [
+        { name: "Paris <br><br>112/114 avenue Charles de Gaulle <br>92200 Neuilly sur Seine", coords: [48.875391, 2.288311] },
+        { name: "Saint Denis<br><br>1 place des Droits de L'Homme<br>93457 Saint-Denis", coords: [48.911816, 2.3624231] },
+        { name: "Lyon<br><br>141 Cours Gambetta <br>69424 Lyon", coords: [45.739926, 4.8591105] },
+        { name: "Marseille<br><br>2 place de la Joliette <br>13002 Marseille", coords: [43.298267, 5.381219] },
+        { name: "Lille<br><br>121 boulevard de Valmy<br>59650 Villeneuve d'Ascq", coords: [50.62595, 3.171165] },
+        { name: "Bordeaux<br><br>Cours Jules Ladoumègue<br>33300 Bordeaux", coords: [44.87078, -0.547364] },
+        { name: "Rennes<br><br>4 rue du Clos Courtel<br>35510 Cesson-Sévigné", coords: [48.119472, -1.602923] },
+        { name: "Schiltigheim<br><br>1 avenue de l’Europe Crystal Parc Bâtiment A<br>67300 Schiltigheim", coords: [48.601593, 7.770488] },
+        { name: "Toulouse<br><br>30 avenue Marcel Dassault La Plaine<br>31500 Toulouse", coords: [43.596561, 1.491287] }
+
+    ];
+
+    // Créer un tableau pour stocker les marqueurs
+    var markers = [];
+
+    // Ajouter les marqueurs des agences à la carte
+    agences.forEach(function (agence, index) {
+        var marker = L.marker(agence.coords)
+            .addTo(map)
+            .bindPopup(`<b>${agence.name}</b>`);
+        markers.push(marker); // Stocker chaque marqueur
+    });
+
+    // Fonction pour centrer la carte sur une agence lorsque l'on clique sur son nom
+    function focusOnAgency(index) {
+        var agence = agences[index];
+        var marker = markers[index];
+
+        // Centrer la carte sur le marqueur
+        map.setView(agence.coords, 14);
+
+        // Ouvrir le popup du marqueur
+        marker.openPopup();
+    }
+</script>
+
+
+</html>
