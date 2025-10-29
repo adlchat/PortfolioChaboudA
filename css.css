@@ -208,6 +208,7 @@ h2 {
 .SAE button {
     width: 100%; /* Le bouton occupe toute la largeur */
     background-color: #3498db;
+    color: white;
     padding: 0.7rem 1rem;
     border: none;
     border-radius: 5px;
@@ -219,14 +220,12 @@ h2 {
 
 .SAE1 button{
     background-color: rgb(13 148 136);
-
 }
 
-
+/*
 .SAE button a{
-    color: white;
     text-decoration: none;
-}
+}*/
 
 .SAE button:hover {
     background-color: #2980b9;
