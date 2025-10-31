@@ -165,13 +165,33 @@ h2 {
     text-decoration: none;
 }
 
+.aProposDeMoi {
+    display: flex;
+    flex-direction: column; /* Par défaut en colonne pour les petits écrans */
+    align-items: center; /* Centre les éléments en mode colonne */
+    gap: 2rem; /* Espacement entre l'image et le texte */
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-align: center; /* Centre le texte pour les petits écrans */
+}
 /* Section Projets (SAE) - Page d'accueil */
+
 .SAE {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grille réactive */
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem; /* Espacement entre les cartes de projet */
     margin-top: 2rem;
 }
+
+/*.SAE {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grille réactive *//*
+    gap: 2rem; /* Espacement entre les cartes de projet *//*
+    margin-top: 2rem;
+}*/
 
 .SAE > div { /* Cible les enfants directs de .SAE (vos cartes de projet) */
     background-color: white;
@@ -191,13 +211,13 @@ h2 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Ombre plus forte au survol */
 }
 
-.SAE h3 { /* En supposant que vous ajouterez un h3 pour les titres de projet dans les divs */
+/*.SAE h3 { /* En supposant que vous ajouterez un h3 pour les titres de projet dans les divs *//*
     color: #3498db;
     font-size: 1.5rem;
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
+*/
 .SAE p {
     color: #555;
     font-size: 0.95rem;
@@ -431,6 +451,13 @@ table tbody tr:nth-child(even) {
 
 table tbody tr:hover {
     background-color: #e6eff4;
+}
+
+
+/* SMA */
+
+.photoSMA img{
+    width: 400px;
 }
 
 
