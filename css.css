@@ -460,6 +460,12 @@ table tbody tr:hover {
     width: 400px;
 }
 
+/* MSAE */
+
+.photoMSAE img{
+    width: 600px;
+    margin: 10px;
+}
 
 
 /* Pied de page */
