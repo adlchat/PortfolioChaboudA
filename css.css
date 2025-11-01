@@ -238,10 +238,14 @@ h2 {
     margin-top: auto; /* Pousse le bouton vers le bas dans le conteneur flex */
 }
 
-.SAE1 button{
+/*a modifier si veut coul diff pour chaque SAE */
+.SAE button{
     background-color: rgb(13 148 136);
 }
 
+.Proj {
+    color:  rgb(13 148 136);
+}
 /*
 .SAE button a{
     text-decoration: none;
@@ -252,7 +256,9 @@ h2 {
     transform: translateY(-2px);
 }
 
-.SAE1 button:hover {
+/*a modifier si veut coul diff pour chaque SAE */
+
+.SAE button:hover {
     background-color: rgb(15 118 110);
     transform: translateY(-2px);
 }
@@ -465,6 +471,14 @@ table tbody tr:hover {
 .photoMSAE img{
     width: 600px;
     margin: 10px;
+}
+
+
+/* PokeScam */
+
+.photoPS img{
+    width: 600px;
+    margin: 5px;
 }
 
 
